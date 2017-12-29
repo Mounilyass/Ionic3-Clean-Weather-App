@@ -1,0 +1,54 @@
+
+
+<ion-content padding class="home">
+  <ion-grid *ngIf="weather">
+    <ion-row>
+      <ion-col width-50 offset-25>
+        <h3 class="city">{{weather.display_location.city}}</h3>
+        <h4 class="country">{{weather.display_location.state_name}}</h4>
+        <hr>
+        <h1 class="temp" >{{weather.temp_c}}&deg;</h1>
+        <div class="icon"><img src="{{Etat}}" alt=""></div>     
+        <h3 class="desc">{{weather.weather}}</h3>
+        
+      </ion-col>
+    </ion-row>
+    <hr>
+   
+    <ion-row>
+      <ion-col width-100>
+                
+        <ion-list class ="infolist" >
+
+          <ion-item>
+                <ion-icon name="ios-leaf-outline" item-start color="light"></ion-icon>
+                <strong>Wind : </strong> {{weather.wind_kph}} km/h
+          </ion-item>
+
+          <ion-item>
+            <ion-icon name="ios-water-outline" item-start color="light"></ion-icon>
+            <strong>Relative Humidity: </strong> {{weather.relative_humidity}}
+          </ion-item>
+
+          <ion-item>
+              <ion-icon name="pin" item-start color="light"></ion-icon>
+            <strong>Latitude: </strong> {{weather.display_location.latitude}}
+          </ion-item>
+
+          <ion-item>
+              <ion-icon name="ios-pin-outline" item-start color="light"></ion-icon>
+            <strong>Longitude: </strong> {{weather.display_location.longitude}}
+          </ion-item>
+
+          <ion-item>
+              <ion-icon name="md-arrow-round-up" item-start color="light"></ion-icon>
+            <strong>Elevation: </strong> {{weather.display_location.elevation}}
+          </ion-item>
+
+        </ion-list>
+      </ion-col>
+    </ion-row>
+    
+  </ion-grid>
+  
+</ion-content>

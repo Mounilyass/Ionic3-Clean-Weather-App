@@ -1,0 +1,35 @@
+
+
+
+<ion-content padding class="settings" text-center>
+  <br>
+  <ion-grid>
+    <ion-row>
+      <ion-col width-100>
+        
+          <form (ngSubmit)="saveForm()">
+              <ion-list>
+            <ion-item>
+                <ion-icon name="pin" item-start color="light"></ion-icon>
+              <ion-label style ="color:#fff ;" fixed>
+                City
+              </ion-label>
+              
+              <ion-input [(ngModel)]="city" name="city" type="text"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-icon name="pin" item-start color="light"></ion-icon>
+              <ion-label style ="color:#fff ;"  fixed>
+                Country
+              </ion-label>
+              <ion-input [(ngModel)]="state" name="state" type="text"></ion-input>
+            </ion-item>
+          </ion-list>
+            <button ion-button type="submit" round outline color ="light"  >Save Changes</button>
+          </form>
+          
+    
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

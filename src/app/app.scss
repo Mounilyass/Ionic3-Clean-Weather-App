@@ -1,0 +1,71 @@
+
+.settings{
+    background: 
+ 
+    linear-gradient(
+      rgba(34, 118, 121, 0.9), 
+      rgb(10, 59, 83)
+    ),
+
+    url('../assets/background.jpg') ;
+    
+}
+
+.home{
+    background: 
+ 
+    linear-gradient(
+      rgba(126, 206, 209,0.8), 
+      rgba(23, 128, 181,1)
+    ),
+
+    url('../assets/background.jpg') ;
+    
+}
+
+.inp {
+    color : #fff ;
+}
+
+.toolbar-title{
+    text-align: center;
+}
+
+.tabs-md .tab-button-icon{
+    color:rgb(255, 255, 255);
+}
+.infolist{
+    border-style: round;
+    border-radius: 100px;
+}
+.temp{
+
+    font-size:120px;
+    text-align: center;
+    font-weight: normal;
+    color :#fff;
+}
+
+.country,.icon, .desc,.city{
+    text-align: center;
+    
+}
+
+.icon img{
+    width: 150px;
+}
+
+.city{
+    color :#fff;
+    font-size:30px;
+}
+.country{
+     color :#fff;
+    font-size:17px;
+}
+
+
+.desc{
+    color :#fff;
+    font-size:22px;
+}

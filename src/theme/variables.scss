@@ -1,0 +1,48 @@
+$font-path: "../assets/fonts";
+$app-direction: ltr;
+
+@import "ionic.globals";
+
+$colors: (
+  primary:    #6495ed,
+  secondary:  #435d8c,
+  danger:     #f53d3d,
+  light:      #ffffff,
+  dark:       #222
+);
+
+// Top Toolbar
+$toolbar-md-background: color($colors, secondary);
+
+// Bottom tabs
+$tabs-md-background: rgba(color($colors, dark),.5);
+$tabs-md-tab-color-active: color($colors, light);
+$tabs-md-tab-color:color($colors, light);
+$tabs-md-tab-text-color: color($colors, light);
+
+$list-md-background-color:rgba(color($colors, dark),0) ;
+$list-md-text-color:color($colors, light);
+
+@import "ionic.theme.default";
+@import "ionic.ionicons";
+@import "roboto";
+@import "noto-sans";
+
+//input styling
+$text-input-md-highlight-color: "transparent";
+$text-input-md-highlight-color-invalid : "transparent";
+$text-input-md-highlight-color-valid : "transparent";
+$text-input-md-background-color : "transparent";
+$text-input-md-show-focus-highlight : "transparent";
+$text-input-md-show-invalid-highlight: "transparent";
+$text-input-md-show-valid-highlight : "transparent";
+$text-input-md-show-success-highlight:      false;
+$text-input-md-show-error-highlight:        false;
+// Input highlight - normal
+$text-input-md-highlight-color:             "transparent";
+
+// Input highlight - valid
+$text-input-md-hightlight-color-valid:      "transparent";
+
+// Input highlight - invalid
+$text-input-md-hightlight-color-invalid:    "transparent";
